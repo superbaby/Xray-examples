@@ -9,7 +9,7 @@
             "settings": {
                 "clients": [
                     {
-                        "id": "", // 填写你的 UUID
+                        "id": "83876bed-69cb-4bea-83f1-d48eb106eec7", // 填写你的 UUID
                         "level": 0,
                         "email": "love@example.com"
                     }
@@ -20,7 +20,7 @@
                         "dest": 80
                     },
                     {
-                        "path": "/websocket", // 必须换成自定义的 PATH
+                        "path": "/sn11", // 必须换成自定义的 PATH
                         "dest": 1234,
                         "xver": 1
                     }
@@ -35,8 +35,8 @@
                     ],
                     "certificates": [
                         {
-                            "certificateFile": "/path/to/fullchain.crt", // 换成你的证书，绝对路径
-                            "keyFile": "/path/to/private.key" // 换成你的私钥，绝对路径
+                            "certificateFile": "fullchain.crt", // 换成你的证书，绝对路径
+                            "keyFile": "private.key" // 换成你的私钥，绝对路径
                         }
                     ]
                 }
@@ -49,7 +49,7 @@
             "settings": {
                 "clients": [
                     {
-                        "id": "", // 填写你的 UUID
+                        "id": "83876bed-69cb-4bea-83f1-d48eb106eec7", // 填写你的 UUID
                         "level": 0,
                         "email": "love@example.com"
                     }
@@ -61,7 +61,7 @@
                 "security": "none",
                 "wsSettings": {
                     "acceptProxyProtocol": true, // 提醒：若你用 Nginx/Caddy 等反代 WS，需要删掉这行
-                    "path": "/websocket" // 必须换成自定义的 PATH，需要和上面的一致
+                    "path": "/sn11" // 必须换成自定义的 PATH，需要和上面的一致
                 }
             }
         }
